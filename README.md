@@ -1,8 +1,8 @@
-# Weather Data Pipeline 🌤️
+# Weather Data Pipeline
 
 A Python-based automated weather data collection and analysis pipeline that fetches weather information from multiple cities, stores it in a SQLite database, and generates visual reports.
 
-## 📋 Features
+## Features
 
 - **Multi-city Weather Data Collection**: Automatically fetches weather data from 5 major cities (Mumbai, London, New York, Berlin, Tokyo)
 - **Data Storage**: Stores weather information in a local SQLite database
@@ -10,7 +10,7 @@ A Python-based automated weather data collection and analysis pipeline that fetc
 - **Automated Scheduling**: Can be scheduled to run automatically using Windows Task Scheduler
 - **Error Handling**: Robust error handling for API requests and data processing
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Python 3.x**
 - **Libraries**:
@@ -36,7 +36,7 @@ weather-data-pipeline/
 └── weather_data.db       # SQLite database (created after first run)
 ```
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
@@ -61,7 +61,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## 📊 Usage
+## Usage
 
 ### Manual Execution
 Run the complete pipeline once:
@@ -84,7 +84,7 @@ python generate_report.py
    - **Arguments**: `"path/to/your/main.py"`
    - **Start in**: Your project directory
 
-## 📈 Data Schema
+## Data Schema
 
 The SQLite database stores weather data with the following structure:
 
@@ -99,7 +99,7 @@ The SQLite database stores weather data with the following structure:
 | wind_speed | REAL | Wind speed |
 | timestamp | TEXT | Data collection timestamp |
 
-## 🔧 Configuration
+## Configuration
 
 ### Adding New Cities
 Edit the `CITIES` list in `config.py`:
@@ -110,7 +110,7 @@ CITIES = ["Mumbai", "London", "New York", "Berlin", "Tokyo", "Paris", "Sydney"]
 ### Changing Data Collection Frequency
 Modify the Task Scheduler settings or use cron jobs on Linux/Mac systems.
 
-## 📋 Requirements
+## Requirements
 
 Create a `requirements.txt` file with:
 ```
@@ -118,6 +118,3 @@ requests==2.31.0
 pandas==2.0.3
 matplotlib==3.7.2
 ```
-
-
-⭐ If you found this project helpful, please give it a star!
